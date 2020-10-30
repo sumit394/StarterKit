@@ -4,18 +4,23 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>StarterKit.Logging</RootNamespace>
     <LangVersion>8</LangVersion>
-    <PackageVersion Condition=" '$(BUILD_BUILDID)' == '' ">0.0.1-local</PackageVersion>
+    <PackageVersion Condition=" '$(BUILD_BUILDID)' == '' ">0.0.3-local</PackageVersion>
     <PackageVersion Condition=" '$(BUILD_BUILDID)' != '' ">1.0.$(BUILD_BUILDID)</PackageVersion>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Sumit Kumar</Authors>
     <PackageId>StarterKit.Logging</PackageId>
-    <Version>1.0.0.0</Version>
+    <Version>1.0.3</Version>
     <Company>Sumit Kumar (Private N/A)</Company>
     <Product>StarterKit.Logging</Product>
     <Description>Starterkit for bootstrapping .net solution with middleware logging feature to include basic metrics</Description>
     <PackageProjectUrl>https://github.com/sumit394/StarterKit</PackageProjectUrl>
     <RepositoryUrl>https://github.com/sumit394/StarterKit</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Sumit Kumar (Sumit394)</Copyright>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags>Sumit Kumar, Sumit394, Demo.StarterKit.Logging</PackageTags>
+    <PackageReleaseNotes>Starterkit for bootstrapping .net solution with middleware logging feature to include basic metrics</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Serilog" Version="2.10.0" />

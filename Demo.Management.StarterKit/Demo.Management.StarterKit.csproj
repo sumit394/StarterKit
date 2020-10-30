@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>StarterKit</RootNamespace>
-    <PackageVersion Condition=" '$(BUILD_BUILDID)' == '' ">0.0.1-local</PackageVersion>
+    <PackageVersion Condition=" '$(BUILD_BUILDID)' == '' ">0.0.3-local</PackageVersion>
     <PackageVersion Condition=" '$(BUILD_BUILDID)' != '' ">1.0.$(BUILD_BUILDID)</PackageVersion>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -11,10 +11,15 @@
     <Company>Sumit Kumar (Private N/A)</Company>
     <Description>Starterkit for bootstrapping .net solution with basic features like swagger, middleware logger and ADFS etc.</Description>
     <Product>StarterKit</Product>
-    <PackageId>StarterKit</PackageId>
-    <Version>1.0.0.0</Version>
+    <PackageId>Demo.StarterKit</PackageId>
+    <Version>1.0.3</Version>
     <PackageProjectUrl>https://github.com/sumit394/StarterKit</PackageProjectUrl>
     <RepositoryUrl>https://github.com/sumit394/StarterKit</RepositoryUrl>
+    <Copyright>Sumit Kumar (Sumit394)</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags>Demo.Starterkit, Sumit Kumar, Sumit394</PackageTags>
+    <PackageReleaseNotes>Starterkit for bootstrapping .net solution with basic features like swagger, middleware logger and ADFS etc.</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />
