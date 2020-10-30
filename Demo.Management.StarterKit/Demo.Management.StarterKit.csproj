@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>StarterKit</RootNamespace>
+    <PackageVersion Condition=" '$(BUILD_BUILDID)' == '' ">0.0.1-local</PackageVersion>
+    <PackageVersion Condition=" '$(BUILD_BUILDID)' != '' ">1.0.$(BUILD_BUILDID)</PackageVersion>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Sumit Kumar</Authors>
+    <Company>Sumit Kumar (Private N/A)</Company>
+    <Description>Starterkit for bootstrapping .net solution with basic features like swagger, middleware logger and ADFS etc.</Description>
+    <Product>StarterKit</Product>
+    <PackageId>StarterKit</PackageId>
+    <Version>1.0.0.0</Version>
+    <PackageProjectUrl>https://github.com/sumit394/StarterKit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/sumit394/StarterKit</RepositoryUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.9" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.8.0" />
+    <PackageReference Include="System.ComponentModel.TypeConverter" Version="4.3.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+</Project>
